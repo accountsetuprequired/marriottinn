@@ -4,7 +4,7 @@
   "description": "the web-app for the vaunt homepage, because why not.",
   "start_url": "/?homescreen=1",
   "background_color": "#EB4F4F",
-  "theme_color": "#EB4F4F",
+  "theme_color": "#b73e3e",
   "display": "standalone",
   "icons": [{
     "src": "images/vauntdark.png",

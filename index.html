@@ -63,7 +63,31 @@ body {transform: rotate(-8deg); background: #EB4F4F; background-image: url(image
     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
     </head>
-    
+
+
+    <script> 
+butInstall.addEventListener('click', () => {
+  console.log('👍', 'butInstall-clicked');
+  const promptEvent = window.deferredPrompt;
+  if (!promptEvent) {
+    // The deferred prompt isn't available.
+    return;
+  }
+  // Show the install prompt.
+  promptEvent.prompt();
+  // Log the result
+  promptEvent.userChoice.then((result) => {
+    console.log('👍', 'userChoice', result);
+    // Reset the deferred prompt variable, since
+    // prompt() can only be called once.
+    window.deferredPrompt = null;
+    // Hide the install button.
+    divInstall.classList.toggle('hidden', true);
+  });
+});
+     </script>
+
+
 <body>
 <div id="howtocenter">
  <div id="howto">
@@ -72,6 +96,12 @@ body {transform: rotate(-8deg); background: #EB4F4F; background-image: url(image
       <span id="h1"> coming soon </span><br><br>
       vaunt is a company comprised of a few people living in various places throughout the us. <br>
       our goal is to create intriguing and thought-provoking (but also semi-goofy) projects and release them (usually) for free. <br>
+     <div id="installContainer" class="hidden">
+      <button id="butInstall" type="button">
+        hey, install our web app
+      </button>
+    </div>
+
   </div>
 </div>
 </body>

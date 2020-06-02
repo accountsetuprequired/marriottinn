@@ -1,0 +1,13 @@
+{
+  "name": "the vaunt webpage",
+  "short_name": "vaunt",
+  "description": "the web-app for the vaunt homepage, because why not.",
+  "start_url": "/?homescreen=1",
+  "background_color": "#EB4F4F",
+  "theme_color": "#EB4F4F",
+  "icons": [{
+    "src": "images/vauntblack.png",
+    "sizes": "160x160",
+    "type": "image/png"
+  }]
+}

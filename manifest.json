@@ -6,7 +6,7 @@
   "background_color": "#EB4F4F",
   "theme_color": "#EB4F4F",
   "icons": [{
-    "src": "images/vauntblack.png",
+    "src": "images/vauntdark.png",
     "sizes": "160x160",
     "type": "image/png"
   }]

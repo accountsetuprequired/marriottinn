@@ -5,6 +5,7 @@
   "start_url": "/?homescreen=1",
   "background_color": "#EB4F4F",
   "theme_color": "#EB4F4F",
+  "display": "standalone",
   "icons": [{
     "src": "images/vauntdark.png",
     "sizes": "160x160",

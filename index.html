@@ -46,6 +46,14 @@ if ('serviceWorker' in navigator) {
     font-size: 210%;
     margin: 0px 0px 20px;
 }
+#banner-standalone {display: block; display: none;}
+         
+@media all and (display-mode: standalone) {
+    #banner-standalone {
+         display: unset;
+     }
+}
+     
 body {cursor: cell !important;}
 body {transform: rotate(-8deg); background: #EB4F4F; background-image: url(images/vauntdarkdrip.gif);}
     </style>
@@ -93,6 +101,9 @@ body {transform: rotate(-8deg); background: #EB4F4F; background-image: url(image
 
 
 <body>
+<div id="standalone-banner">
+      🥳you get a special banner for using the progressive web app🥳
+</div>
 <div id="howtocenter">
  <div id="howto">
    <p> Vaunt </p>

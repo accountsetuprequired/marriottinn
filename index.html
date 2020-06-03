@@ -1,30 +1,12 @@
 <html lang="en">
 <head>
      <script> 
-const divInstall = document.getElementById('installContainer');
-const butInstall = document.getElementById('butInstall');
-          
-window.addEventListener('beforeinstallprompt', (event) => {
-  console.log('👍', 'beforeinstallprompt', event);
-  // Stash the event so it can be triggered later.
-  window.deferredPrompt = event;
-  // Remove the 'hidden' class from the install button container
-  divInstall.classList.toggle('hidden', false);
-});
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('sw.js');
 }
      </script>
-     
-     
-     
-     
-     
      <link rel="manifest" href="manifest.json" />
     <style>
-         .hidden {
-  display: none !important;
-}
          #h1 {
     font-weight: bold;
     font-size: 130%;
@@ -105,9 +87,9 @@ body {transform: rotate(-8deg); background: #EB4F4F; background-image: url(image
       <span id="h1"> coming soon </span><br><br>
       vaunt is a company comprised of a few people living in various places throughout the us. <br>
       our goal is to create intriguing and thought-provoking (but also semi-goofy) projects and release them (usually) for free. <br>
-     <div id="installContainer" class="hidden">
+     <div id="installContainer">
       <button id="butInstall" type="button">
-        hey, install our web app
+        hey, see what we're doing
       </button>
     </div>
 

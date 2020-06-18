@@ -1,78 +1,32 @@
-<html lang="en">
-<head>
-  <style>
-    img {
-    width: 100vw;
-}
-body {
-    font-size: 2vw;
-    margin: auto;
-    margin-top: 5vh;
-    font-family: 'varela round';
-}
-body span a {
-    font-family: 'varela round';
-    color: #fff;
-    background: #eb4f4f;
-    padding: .2vw;
-    
-}
-body > span {
-    margin-top: 1vw;
-    padding: 2vw;
-}
-@media only screen and (max-width: 768px) {
-    img {
-        position: fixed;
-        overflow: hidden;
-        width: 170vw;
-        user-drag: none; 
-        user-select: none;
-        -moz-user-select: none;
-        -webkit-user-drag: none;
-        -webkit-user-select: none;
-        -ms-user-select: none;
-}
-body {
-    font-size: 8vw;
-    position: fixed;
-    height: 100%;
-    margin-top: 5vh;
-    font-family: 'varela round';
-}
-body span a {
-    font-family: 'varela round';
-    color: #fff;
-    background: #eb4f4f;
-    padding: .2vw;
-    
-}
-body > span {
-    margin-top: 1vw;
-    margin: 1vw;
-    padding: 2vw;
-}
-}
-  </style>
-    <meta charset="UTF-8">
-    <title>vaunt</title>
-    
-    <meta name="description" content="the vaunt project">
+<style>
+  @import "compass";
 
-    <meta property="og:url" content="www.vaunt.xyz">
-    <meta property="og:title" content="vaunt">
-    <meta property="og:description" content="the vaunt project">
-    <meta property="og:image" content="images/vauntwhite.png">
+body {
+  background-color: #111111;
+}
+.board {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 150px;
+  width: 500px;
+  margin: -75px 0 0 -250px;
+  padding: 20px;
+  font: 75px/75px Monoton, cursive;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 80px red,0 0 30px FireBrick,0 0 6px;
+}
+  DarkRed{
+  color: red;
+  }
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content= "width=device-width">
-    <link rel="icon" type="image/png" href="images/vauntdark.png" />
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">  
-    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
-    </head>
-  <span>goddammit. you broke it. click here to go <a href="https://vaunt.xyz">to the home page</a></span>
-<br>
-<img src="images/ripped.jpg"alt="css tear">
-  
-</html>
+#error {
+  color: #fff;
+  text-shadow: 0 0 80px #ffffff,0 0 30px #008000,0 0 6px #0000ff;
+  }
+</style>
+
+<div class="board">
+  <p class="code" style="color: #fff; text-shadow: 0 0 80px #ffffff,0 0 30px #008000,0 0 6px #0000ff"> VAUNT</>
+  <p class="error" style="color:#fff"> 404</>

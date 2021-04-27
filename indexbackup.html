@@ -1,0 +1,162 @@
+<html lang="en">
+<head>
+     <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-E4TDRC91L5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-E4TDRC91L5');
+</script>
+     <script> 
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('sw.js');
+}
+     </script>
+     <link rel="manifest" href="manifest.json" />
+    <style>
+         #h1 {
+    font-weight: bold;
+    font-size: 130%;
+}
+#button {
+    border: 3px solid #000;
+    background: #eb4f4f;
+    color: #fff;
+    text-decoration: unset;
+    padding: 3px;
+    font-family: 'Varela Round';
+    font-size: 90%;
+    border-radius: 10px;
+    transition: .5s ease;
+}
+#button:hover {
+    box-shadow: inset 20vw 0px 0px 0px #000000;
+}
+         #howtocenter {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 50%;
+    margin: 10% auto;
+}
+#howto {
+  width: 80%;
+  height: 50%;
+    background: #eee;
+    padding: 5%;
+    border: 2px solid #000;
+    box-shadow: -20px -10px 0 1px #000;
+}
+#howto p {
+    font-family: Times New Roman;
+    font-weight: bolder;
+    font-size: 210%;
+    margin: 0px 0px 20px;
+}
+#howtocenter {transform: rotate(-8deg); }
+.banner {display: none;}
+#stand {display: block;}
+         
+@media all and (display-mode: standalone) {
+    .banner {
+         display: unset;
+     }
+}
+     
+body {cursor: cell !important;}
+body {background: #EB4F4F; background-image: url(images/vauntdarkdrip.gif);}
+         
+         .banner {
+  width: 25vw;
+    position: fixed;
+  height: auto;
+    background: #eee;
+    padding: 5%;
+    top: 34vh;
+    border: 2px solid #000;
+    box-shadow: -1.6vw -.7vw 0 1px #000;
+    font-size: .9vw;
+}
+#howto {
+  width: 35vw;
+    position: fixed;
+  height: auto;
+    top: 0vw;
+    background: #eee;
+    padding: 5%;
+    border: 2px solid #000;
+    font-size: .8vw;
+    box-shadow: -1.6vw -.7vw 0 1px #000;
+}
+#howto p {
+    font-family: Times New Roman;
+    font-weight: bolder;
+    font-size: 2vw;
+    margin: 0px 0px 20px;
+}
+    </style>
+
+    <meta charset="UTF-8">
+    <title>vaunt</title>
+    
+    <meta name="description" content="the vaunt project">
+
+    <meta property="og:url" content="www.vaunt.xyz">
+    <meta property="og:title" content="vaunt">
+    <meta property="og:description" content="the vaunt project">
+    <meta property="og:image" content="images/vauntwhite.png">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content= "width=device-width">
+    <link rel="icon" type="image/png" href="images/vauntdark.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    </head>
+
+
+    <script> 
+         butInstall.addEventListener('click', () => {
+  console.log('👍', 'butInstall-clicked');
+  const promptEvent = window.deferredPrompt;
+  if (!promptEvent) {
+    // The deferred prompt isn't available.
+    return;
+  }
+  // Show the install prompt.
+  promptEvent.prompt();
+  // Log the result
+  promptEvent.userChoice.then((result) => {
+    console.log('👍', 'userChoice', result);
+    // Reset the deferred prompt variable, since
+    // prompt() can only be called once.
+    window.deferredPrompt = null;
+    // Hide the install button.
+    divInstall.classList.toggle('hidden', true);
+  });
+});
+     </script>
+
+
+<body>
+<div id="stand">
+<div id="howtocenter">
+ <div id="howto">
+   <p> Vaunt </p>
+      
+      <span id="h1"> coming soon </span><br><br>
+      vaunt is a company comprised of a few people living in various places throughout the us. <br>
+      our goal is to create intriguing and thought-provoking (but also semi-goofy) projects and release them (usually) for free. <br>
+      <br><br>
+      <a id="button" href="whatwedo">
+        hey, see what we're doing
+      </a>
+      </div>
+      <div class="banner">🥳you get a special banner for using the progressive web app🥳</div>
+  </div>
+</div>
+</body>
+
+</html>
